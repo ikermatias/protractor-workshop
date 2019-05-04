@@ -1,0 +1,35 @@
+{
+  "name": "workshop-protractor",
+  "version": "1.0.0",
+  "description": "This is a workshop about protractor",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "npm run clean && tsc",
+    "test": "npm run build && protractor dist/protractor/local.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ikermatias/protractor-workshop.git"
+  },
+  "keywords": [
+    "ui-testing",
+    "dojo",
+    "practice",
+    "protractor"
+  ],
+  "author": "Sebastian Garcia <josegar0218@gmail.com> (ikermatias)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ikermatias/protractor-workshop/issues"
+  },
+  "homepage": "https://github.com/ikermatias/protractor-workshop#readme",
+  "dependencies": {
+    "@types/node": "^12.0.0",
+    "protractor": "^5.4.2"
+  },
+  "devDependencies": {
+    "@types/jasminewd2": "^2.0.6",
+    "typescript": "^3.4.5"
+  }
+}
